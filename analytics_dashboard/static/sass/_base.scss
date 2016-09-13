@@ -17,7 +17,7 @@
 // --------------------
 html {
   height: 100%;
-  font-size: 100%;
+  font-size: 14px;
 }
 
 a {
@@ -35,6 +35,11 @@ a {
 // removes the outline around nav links when hovering
 .nav > li > a {
   @extend a;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 hr.has-emphasis {
@@ -469,4 +474,9 @@ hr.has-emphasis {
       width: 700px;
     }
   }
+}
+
+// pattern-library override hack. FIXME when PL is imported via sass and $grid-max-width can be configured
+.grid-container {
+  max-width: 1170px;
 }
