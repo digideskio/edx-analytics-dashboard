@@ -108,6 +108,10 @@ button.chart-info {
 
   background-color: white;
   border: $edx-gray 1px solid;
+  
+  // Reason for !important: need to override Datamap style added directly to element via JS.
+  // (they set it to 60%, but that makes too much vertical space for the height of the map)
+  padding-bottom: 41% !important;
 
   .chart-tooltip {
     position: absolute;
