@@ -744,7 +744,7 @@ body.view-dashboard {
 
           &:hover {
             // Override the transparent background set by the .navbar-nav selector.
-            background: $dropdown-link-hover-bg;
+            background: $navbar-default-link-active-bg;
           }
         }
 
