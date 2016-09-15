@@ -40,6 +40,7 @@ a {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
+  color: $gray-l1;
 }
 
 hr.has-emphasis {
@@ -67,7 +68,7 @@ hr.has-emphasis {
   @extend %hd-titlecased;
   display: inline-block;
   vertical-align: middle;
-  color: $edx-blue-s3;
+  color: $palette-primary-accent;
   font-weight: 600;
   font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
 }
@@ -82,15 +83,18 @@ hr.has-emphasis {
   padding: 25px 50px; // needed for logo to render properly
   height: inherit;
 
+  // STATE: hover
+  &:hover, &:active {
+    .navbar-brand-app {
+      color: $palette-primary-base;
+    }
+  }
+
   .navbar-brand-app {
     @include transition(color ease-in-out .25s);
     @extend %hd-titlecased;
     @extend %brand-app;
 
-    // STATE: hover
-    &:hover, &:active {
-      color: $link-color;
-    }
   }
 }
 
@@ -159,7 +163,7 @@ hr.has-emphasis {
     margin-bottom: $padding-base-vertical;
 
     &.bordered {
-      border-bottom: $edx-gray-l1 1px solid;
+      border-bottom: $gray-l1 1px solid;
       padding-bottom: $padding-base-vertical;
       margin-bottom: $padding-large-vertical;
     }
@@ -341,6 +345,9 @@ hr.has-emphasis {
     padding-top: ($padding-large-vertical*2);
     margin-left: $padding-small-horizontal;
     margin-right: $padding-small-horizontal;
+    a {
+      color: $palette-primary-accent;
+    }
   }
 
   .feedback {
