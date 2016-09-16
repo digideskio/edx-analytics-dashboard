@@ -605,7 +605,7 @@ body.view-dashboard {
 // description and controls at the top and bottom of the chart
 .chart-marginals {
   border: $description-border;
-  padding: $padding-small-horizontal 0;
+  padding: $padding-small-horizontal $padding-small-horizontal;
   background-color: $white;
 
   p {
@@ -679,7 +679,7 @@ body.view-dashboard {
     padding: 5px;
 
     .policy-item-box {
-      background-color: $edx-blue-l1;
+      background-color: $edx-blue-l2;
       margin-bottom: $padding-base-vertical;
       height: 50px;
       line-height: 50px;
