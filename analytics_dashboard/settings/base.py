@@ -420,6 +420,7 @@ THEME_SCSS = 'sass/themes/open-edx.scss'
 
 ########## COURSE API
 COURSE_API_URL = None
+GRADING_POLICY_API_URL = None
 
 # If no key is specified, the authenticated user's OAuth2 access token will be used.
 COURSE_API_KEY = None
@@ -468,3 +469,10 @@ REST_FRAMEWORK = {
 # Regex used to capture course_ids from URLs
 COURSE_ID_PATTERN = r'(?P<course_id>[^/+]+[/+][^/+]+[/+][^/]+)'
 ########## END COURSE_ID_PATTERN
+
+########## LEARNER_API_LIST_DOWNLOAD_FIELDS
+# Comma-delimited list of field names to include in the Learner List CSV download
+# e.g., # "username,segments,cohort,engagements.videos_viewed,last_updated"
+# Default (None) includes all available fields, in alphabetical order.
+LEARNER_API_LIST_DOWNLOAD_FIELDS = None
+########## END LEARNER_API_LIST_DOWNLOAD_FIELDS
